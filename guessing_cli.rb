@@ -1,11 +1,9 @@
 # Code your solution here!
 
 def run_guessing_game
-  # randomNumber = 1
   playing = true
   while playing do
     randomNumber =  rand(1..6)
-
     puts "Guess a number between 1 and 6."
     userInput = gets.chomp
     if userInput == "exit"
@@ -17,7 +15,4 @@ def run_guessing_game
       puts "The computer guessed #{randomNumber}."
     end
   end
-
-  # puts "Goodbye!" if userInput === "exit"
-
 end
